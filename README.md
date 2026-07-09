@@ -102,6 +102,8 @@ The 70B model only ever sees a sanitized query about a placeholder medical condi
 
 ## Running it
 
+Please run this inside a Kaggle Notebook as the heavy use of APIs and LLMs might create problems for running it in remote. Most efficient way is to run it on Kaggle and manage user sessions from there.
+
 ```bash
 pip install gliner transformers torch accelerate google-generativeai groq sentence-transformers
 
@@ -110,6 +112,7 @@ python -c "from pipeline import run_pipeline; run_pipeline('your query here')"
 ```
 
 The notebook is written for a Kaggle environment (`kaggle_secrets` for API keys, `/kaggle/input` for the benchmark dataset) but the core pipeline functions are environment-agnostic.
+Please refer to our custom dataset and dowload it on Kaggle notebook before running the project.
 
 ---
 
